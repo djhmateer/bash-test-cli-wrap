@@ -6,7 +6,8 @@ echo "Start infra.azcli time is ${now}"
 # timing code
 START=$(date +%s.%N)
 
-set -x
+# debug output - sends on stderr
+# set -x
 
 # generate a random suffix between 1 and 1000
 int=$(shuf -i 1-1000 -n 1)
